@@ -1,0 +1,125 @@
+/*
+Description:
+    Contains all the styles for the winning wheel page.
+    
+Verison History:
+    2012-01-28, Douglas McKechie
+    - Created based off earlier version.
+    
+    2015-09-26, Douglas McKechie
+    - Minor updates for the 2.0 winwheel example.
+
+*/
+body
+{
+    background-color: #000;
+    background-image: url(../assets/Ice-and-Fire-showdown_1920x1080.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+.header {
+    color: #ee6e73;
+    font-weight: 300;
+}
+
+.my-custom-btn {
+    position: absolute;
+    right: 50px;
+    top: 23px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    z-index: 997;
+}
+
+/* Sets the background image for the wheel */
+
+label.btn:not(.btn-flat) { 
+    background-color: #35DDE0;
+    color: #333;
+  }
+div.the_wheel
+{
+    background-image: url(../assets/wheel_back1.png); 
+    background-position-y: -200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    height: 657px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+div.wheel{
+    position: relative;
+    padding-top: 158px;
+    padding-left: 78px;
+}
+
+
+.container {
+    height: 100vh; /* suponiendo que quieres centrar respecto a todo el alto de la pantalla */
+    width: 100%;
+    display: flex; /* propiedad flexbox */
+    justify-content: center; /* centra el contenido horizontalmmente */
+    align-items: center; /* centra el contenido verticalmente */
+  }
+  
+
+/* Do some css reset on selected elements */
+h1, p
+{
+    margin: 0;
+}
+
+div.power_controls
+{
+    margin-right:70px;
+}
+
+div.html5_logo
+{
+    margin-left:70px;
+}
+
+/* Styles for the power selection controls */
+table.power
+{
+    background-color: #cccccc;
+    cursor: pointer;
+    border:1px solid #333333;
+}
+
+table.power th
+{
+    background-color: white;
+    cursor: default;
+}
+
+td.pw1
+{
+    background-color: #6fe8f0;
+}
+
+td.pw2
+{
+    background-color: #86ef6f;
+}
+
+td.pw3
+{
+    background-color: #ef6f6f;
+}
+
+/* Style applied to the spin button once a power has been selected */
+.clickable
+{
+    cursor: pointer;
+}
+
+/* Other misc styles */
+.margin_bottom
+{
+    margin-bottom: 5px;
+}
